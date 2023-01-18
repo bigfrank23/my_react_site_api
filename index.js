@@ -25,7 +25,8 @@ const io = require("socket.io")(httpServer);
 //     res.end();
 //   },
 // });
-// dotenv.config();
+// 
+dotenv.config();
 
 const path = require("path");
 
