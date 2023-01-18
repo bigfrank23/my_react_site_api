@@ -178,7 +178,7 @@ app.post('/api/contact/', (req, res, next)=> {
 // const io = socketIO(db);
 
 const CONNECTION_URL = process.env.MONGO_URI;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.EPORT || 5000;
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
