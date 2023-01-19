@@ -1,4 +1,4 @@
-const dotenv = require("dotenv").config()
+const dotenv = require("dotenv")
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
@@ -128,7 +128,7 @@ app.post('/api/contact/', (req, res, next)=> {
     const content = `${name} from ${location} \n\n name: ${name} \n\n email: ${email} \n\n location: ${location} \n\n message: ${message}`;
 
     const mailOption = {
-      from: `Your React Site via NodeMailer`,
+      from: email,
       to: "ezeyimf@gmail.com",
       subject: `New message from ${name} via Your React Website Contact Page`,
       text: content,
