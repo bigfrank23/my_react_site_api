@@ -50,6 +50,7 @@ app.get("/", (req, res) => {
     console.log("The 'myCookie' cookie is not present");
     // The 'myCookie' cookie is not present
   }
+  res.send('API running')
 });
 
 //Multer config
